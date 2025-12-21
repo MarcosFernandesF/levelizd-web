@@ -63,6 +63,7 @@ a {
   margin: 0;
   padding: 0;
   color: #fff;
+  font-weight: bold;
 }
 
 .search-form {
