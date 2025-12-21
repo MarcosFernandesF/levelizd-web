@@ -1,9 +1,12 @@
 <template>
   <div>
-    Home Testeee
+    Oi
   </div>
 </template>
 
-<script>
-
+<script setup>
 </script>
+
+<style scoped>
+  
+</style>
