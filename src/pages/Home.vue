@@ -3,7 +3,7 @@
     <section id="trending-container" class="section-container">
       <div class="section-header">
         <h2>Trending Games</h2>
-        <RouterLink>See all ></RouterLink>
+        <RouterLink to="/">See all ></RouterLink>
       </div>
       <div class="section-content">
         <GameCard v-for="game in trendingGames" :key="game.id" :game="game" />
@@ -33,8 +33,8 @@ const trendingGames = [
   },
   {
     id: 3,
-    title: "Zelda: Tears of the Kingdom",
-    coverUrl: "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/The_Legend_of_Zelda_Tears_of_the_Kingdom_cover.jpg/250px-The_Legend_of_Zelda_Tears_of_the_Kingdom_cover.jpg"
+    title: "Spider-Man 2",
+    coverUrl: "https://image.api.playstation.com/vulcan/ap/rnd/202306/1219/1c7b75d8ed9271516546560d219ad0b22ee0a263b4537bd8.png"
   },
   {
     id: 4,
@@ -47,6 +47,7 @@ const trendingGames = [
     coverUrl: "https://upload.wikimedia.org/wikipedia/pt/thumb/f/f7/Cyberpunk_2077_capa.png/330px-Cyberpunk_2077_capa.png"
   }
 ];
+
 </script>
 
 <style scoped>
