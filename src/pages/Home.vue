@@ -1,7 +1,10 @@
 <template>
   <div>
     <section id="trending-container" class="section-container">
-      <h2>Trending Games</h2>
+      <div class="section-header">
+        <h2>Trending Games</h2>
+        <RouterLink>See all ></RouterLink>
+      </div>
       <div class="section-content">
         <GameCard v-for="game in trendingGames" :key="game.id" :game="game" />
       </div>
@@ -54,6 +57,12 @@ h2 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .section-container {
   margin: 50px 10%;
 }
@@ -63,5 +72,12 @@ h2 {
   margin-top: 10px;
   gap: 1em;
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.0rem;
+}
+
 
 </style>
