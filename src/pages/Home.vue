@@ -47,8 +47,10 @@ const trendingGames = [
 
 <style scoped>
 h2 {
-  color: rgb(194, 60, 36);
-  margin-bottom: 10px;
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .section-container {
@@ -67,6 +69,7 @@ h2 {
   align-items: center;
   width: 20%;
   aspect-ratio: 2/3;
+  cursor: pointer;
 }
 
 .game-image {
@@ -74,11 +77,13 @@ h2 {
   height: 100%;
   border-radius: 10px;
   object-fit: cover;
-  transition: transform .2s;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .game-image:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(139, 92, 246, 0.4);
 }
 
 </style>

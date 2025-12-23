@@ -23,6 +23,8 @@ h1, h2, h3, .score {
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #12f3;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  min-height: 100vh;
+  color: #e0e0e0;
 }
 </style>

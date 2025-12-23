@@ -54,8 +54,9 @@ a {
 .top-bar {
   display: flex;
   align-items: center;
-  padding: 10px 0px;
-  background-color: #1e81af;
+  padding: 15px 0px;
+  background: rgba(30, 20, 60, 0.95);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   justify-content: space-around;
 }
 
@@ -72,9 +73,10 @@ a {
 .search-form {
   display: flex;
   align-items: center;
-  background: white;
+  background: rgba(255, 255, 255, 0.95);
   padding: 5px 10px;
   border-radius: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .input-search {
@@ -91,12 +93,12 @@ a {
   align-items: center;
   justify-content: center;
   padding: 5px;
-  color: #1e81af;
+  color: #8b5cf6;
   transition: color 0.2s;
 }
 
 .search-btn:hover {
-  color: #0e1f25;
+  color: #6d28d9;
 }
 
 .search-icon {
