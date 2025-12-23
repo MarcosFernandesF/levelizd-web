@@ -14,7 +14,7 @@
           <RouterLink to="/">Genres</RouterLink>
         </li>
         <li>
-          <RouterLink to="/">Genres</RouterLink>
+          <RouterLink to="/">About</RouterLink>
         </li>
       </ul>
     </nav>

@@ -3,9 +3,7 @@
     <section id="trending-container" class="section-container">
       <h2>Trending Games</h2>
       <div class="section-content">
-        <div v-for="game in trendingGames" :key="game.id" class="game-card">
-          <img :src="game.coverUrl" :alt="game.title" class="game-image">
-        </div>
+        <GameCard v-for="game in trendingGames" :key="game.id" :game="game" />
       </div>
     </section>
 
@@ -16,6 +14,9 @@
 </template>
 
 <script setup>
+import GameCard from '@/components/cards/GameCard.vue';
+
+
 const trendingGames = [
   {
     id: 1,
@@ -61,29 +62,6 @@ h2 {
   display: flex;
   margin-top: 10px;
   gap: 1em;
-}
-
-.game-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20%;
-  aspect-ratio: 2/3;
-  cursor: pointer;
-}
-
-.game-image {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  object-fit: cover;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.game-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 16px rgba(139, 92, 246, 0.4);
 }
 
 </style>
