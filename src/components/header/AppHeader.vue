@@ -13,6 +13,9 @@
         <li>
           <RouterLink to="/">Genres</RouterLink>
         </li>
+        <li>
+          <RouterLink to="/">Genres</RouterLink>
+        </li>
       </ul>
     </nav>
 
