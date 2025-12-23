@@ -2,7 +2,6 @@
   <div>
     <section id="trending-container" class="section-container">
       <h2>Trending Games</h2>
-      <hr>
       <div class="section-content">
         <div v-for="game in trendingGames" :key="game.id" class="game-card">
           <img :src="game.coverUrl" :alt="game.title" class="game-image">
@@ -12,7 +11,6 @@
 
     <section id="reviews-container" class="section-container">
       <h2>Popular Reviews</h2>
-      <hr>
     </section>
   </div>
 </template>
@@ -48,6 +46,11 @@ const trendingGames = [
 </script>
 
 <style scoped>
+h2 {
+  color: rgb(194, 60, 36);
+  margin-bottom: 10px;
+}
+
 .section-container {
   margin: 50px 10%;
 }

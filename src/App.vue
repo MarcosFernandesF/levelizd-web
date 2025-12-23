@@ -23,5 +23,6 @@ h1, h2, h3, .score {
 
 body {
   font-family: 'Inter', sans-serif;
+  background-color: #12f3;
 }
 </style>
