@@ -83,6 +83,7 @@ a {
   border: none;
   outline: none;
   padding: 5px;
+  background-color: transparent;
 }
 
 .search-btn {
