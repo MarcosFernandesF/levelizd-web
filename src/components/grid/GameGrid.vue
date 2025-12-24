@@ -22,4 +22,11 @@ const props = defineProps({
   gap: 1em;
 }
 
+/* Desktops pequenos */
+@media (max-width: 1200px) {
+  .section-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 </style>

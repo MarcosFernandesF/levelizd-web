@@ -1,6 +1,8 @@
 <template>
   <header class="top-bar">
-    <h1>Levelizd</h1>
+    <RouterLink to="/">
+      <h1>Levelizd</h1>
+    </RouterLink>
 
     <nav>
       <ul class="navigation-list">
@@ -118,6 +120,26 @@ a {
   gap: 1em;
   justify-content: center;
   align-items: center;
+}
+
+/* Desktops pequenos */
+@media (max-width: 1200px) {
+  .top-bar {
+    padding: 10px 15px;
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .navigation-list {
+    gap: 2rem;
+  }
+
+  .input-search {
+    width: 140px;
+  }
 }
 
 </style>
