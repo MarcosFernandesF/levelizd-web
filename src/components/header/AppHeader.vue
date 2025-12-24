@@ -20,7 +20,7 @@
     </nav>
 
     <div class="search-user-container">
-      <search>
+      <div role="search">
         <form class="search-form">
           <input class="input-search" id="game" type="search" placeholder="Find a game" />
           
@@ -28,7 +28,7 @@
             <MagnifyingGlassIcon class="search-icon" />
           </button>
         </form>
-      </search>
+      </div>
       <UserCircleIcon class="user-icon"></UserCircleIcon>
     </div>
 
