@@ -18,7 +18,7 @@ const props = defineProps({
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20%;
+  width: 100%;
   aspect-ratio: 2/3;
   cursor: pointer;
 }

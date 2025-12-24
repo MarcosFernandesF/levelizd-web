@@ -3,11 +3,9 @@
     <section id="trending-container" class="section-container">
       <div class="section-header">
         <h2>Trending Games</h2>
-        <RouterLink to="/">See all ></RouterLink>
+        <RouterLink to="/games">See all ></RouterLink>
       </div>
-      <div class="section-content">
-        <GameCard v-for="game in trendingGames" :key="game.id" :game="game" />
-      </div>
+      <GameGrid :games="trendingGames"/>  
     </section>
 
     <section id="reviews-container" class="section-container">
@@ -17,36 +15,8 @@
 </template>
 
 <script setup>
-import GameCard from '@/components/cards/GameCard.vue';
-
-
-const trendingGames = [
-  {
-    id: 1,
-    title: "Baldur's Gate 3",
-    coverUrl: "https://upload.wikimedia.org/wikipedia/en/1/12/Baldur%27s_Gate_3_cover_art.jpg"
-  },
-  {
-    id: 2,
-    title: "Elden Ring",
-    coverUrl: "https://upload.wikimedia.org/wikipedia/pt/thumb/0/0d/Elden_Ring_capa.jpg/330px-Elden_Ring_capa.jpg"
-  },
-  {
-    id: 3,
-    title: "Spider-Man 2",
-    coverUrl: "https://image.api.playstation.com/vulcan/ap/rnd/202306/1219/1c7b75d8ed9271516546560d219ad0b22ee0a263b4537bd8.png"
-  },
-  {
-    id: 4,
-    title: "God of War Ragnarök",
-    coverUrl: "https://upload.wikimedia.org/wikipedia/pt/thumb/a/a5/God_of_War_Ragnar%C3%B6k_capa.jpg/330px-God_of_War_Ragnar%C3%B6k_capa.jpg"
-  },
-  {
-    id: 5,
-    title: "Cyberpunk 2077",
-    coverUrl: "https://upload.wikimedia.org/wikipedia/pt/thumb/f/f7/Cyberpunk_2077_capa.png/330px-Cyberpunk_2077_capa.png"
-  }
-];
+import GameGrid from '@/components/grid/GameGrid.vue';
+import { trendingGames } from '@/data/gamesData.js';
 
 </script>
 
@@ -66,12 +36,6 @@ h2 {
 
 .section-container {
   margin: 50px 10%;
-}
-
-.section-content {
-  display: flex;
-  margin-top: 10px;
-  gap: 1em;
 }
 
 a {
