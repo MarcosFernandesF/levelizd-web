@@ -7,7 +7,7 @@ export const allReviews = [
     reviewText: "A modern RPG masterpiece. The freedom of choice is impressive and every decision truly matters. Tactical combat is deep and companion stories are thrilling.",
     reviewDate: "Dec 15, 2024",
     userName: "DragonSlayer92",
-    rating: 5
+    rating: 2.5
   },
   {
     id: 2,
@@ -107,6 +107,8 @@ export const allReviews = [
     reviewText: "Nintendo superou Breath of the Wild. A liberdade criativa é insana e as novas mecânicas são geniais. GOTY 2023.",
     reviewDate: "2024-11-05",
     userName: "HyruleHero",
+    rating: 3.5,
+  },
   {
     id: 11,
     gameName: "The Legend of Zelda: Tears of the Kingdom",

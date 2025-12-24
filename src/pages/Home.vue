@@ -19,9 +19,12 @@
             <p>{{ review.userName }} reviewed {{ review.gameName }} ({{ review.reviewDate }})</p>
             <div class="image-review-container">
               <img :src="review.gameCoverUrl" :alt="review.gameName" class="game-review-image">
+              
               <div class="review-rating-container">
                 <span>{{ review.reviewText }}</span>
-                <span>{{ review.rating }}</span>
+                
+                <StarRating :value="review.rating" />
+                
               </div>
             </div>
           </li>
@@ -33,6 +36,7 @@
 
 <script setup>
 import GameGrid from '@/components/grid/GameGrid.vue';
+import StarRating from '@/components/rating/StarRating.vue';
 import { trendingGames } from '@/data/gamesData.js';
 import { popularReviews } from '@/data/reviewsData';
 
