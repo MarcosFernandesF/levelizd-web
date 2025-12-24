@@ -2,7 +2,9 @@
   <AppHeader></AppHeader>
 
   <main>
-    <RouterView />
+    <Transition name="fade" mode="out-in">
+      <RouterView />
+    </Transition>
   </main>
 </template>
 
@@ -30,5 +32,15 @@ body {
   background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
   min-height: 100vh;
   color: #e0e0e0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
