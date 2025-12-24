@@ -31,7 +31,6 @@ O projeto utiliza uma paleta de cores moderna com gradientes roxos e azuis escur
 - **Vue Router** - Gerenciamento de rotas SPA
 - **Vite** - Build tool rápido
 - **Heroicons** - Ícones SVG
-- **CSS Grid** - Layout responsivo
 
 ## 📁 Estrutura do Projeto
 
