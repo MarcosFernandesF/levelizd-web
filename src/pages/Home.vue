@@ -16,7 +16,7 @@
 
 <script setup>
 import GameGrid from '@/components/grid/GameGrid.vue';
-import { trendingGames } from '@/data/gamesData.js';
+              import { trendingGames } from '@/data/gamesData.js';
 
 </script>
 

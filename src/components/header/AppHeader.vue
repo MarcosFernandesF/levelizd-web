@@ -11,7 +11,7 @@
           <RouterLink to="/">Reviews</RouterLink>
         </li>
         <li>
-          <RouterLink to="/">Games</RouterLink>
+          <RouterLink to="/games">Games</RouterLink>
         </li>
         <li>
           <RouterLink to="/">Genres</RouterLink>

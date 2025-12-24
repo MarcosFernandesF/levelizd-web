@@ -17,6 +17,10 @@ import AppHeader from './components/header/AppHeader.vue';
   padding: 0;
 }
 
+html {
+  overflow-y: scroll;
+}
+
 h1, h2, h3, .score {
   font-family: 'Oxanium', sans-serif;
 }
