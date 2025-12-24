@@ -1,6 +1,7 @@
 <template>
   <header class="top-bar">
-    <RouterLink to="/">
+    <RouterLink to="/" class="logo-container">
+      <img src="@/assets/logo.svg" alt="Levelizd Logo" class="logo" />
       <h1>Levelizd</h1>
     </RouterLink>
 
@@ -42,6 +43,23 @@ import { MagnifyingGlassIcon, UserCircleIcon } from '@heroicons/vue/24/outline'
 </script>
 
 <style scoped>
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.logo-container:hover .logo {
+  transform: scale(1.1) rotate(5deg);
+  filter: drop-shadow(0 0 8px rgba(139, 92, 246, 0.6));
+}
 
 h1, span {
   margin: 0;
