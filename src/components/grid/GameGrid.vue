@@ -1,7 +1,9 @@
 <template>
-  <div class="section-content">
-    <GameCard v-for="game in props.games" :key="game.id" :game="game" />
-  </div>
+  <ul class="section-content">
+    <li v-for="game in props.games" :key="game.id">
+      <GameCard :game="game" />
+    </li>
+  </ul>
 </template>
 
 <script setup>
@@ -20,6 +22,12 @@ const props = defineProps({
   grid-template-columns: repeat(5, 1fr);
   margin-top: 10px;
   gap: 1em;
+  list-style: none;
+  padding: 0;
+}
+
+.section-content li {
+  display: contents;
 }
 
 /* Desktops pequenos */
