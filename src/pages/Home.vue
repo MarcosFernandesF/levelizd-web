@@ -60,7 +60,7 @@ import { popularReviews } from '@/data/reviewsData';
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 10px;
-  gap: 1em;
+  gap: 1.5em;
   list-style: none;
   padding: 0;
 }
